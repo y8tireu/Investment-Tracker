@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Tracker & Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Tracker & Calculator</h1>
+        <div class="form-group">
+            <label for="stockSymbol">Stock Symbol:</label>
+            <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol (e.g., AAPL)">
+        </div>
+        <div class="form-group">
+            <label for="investmentAmount">Investment Amount ($):</label>
+            <input type="number" id="investmentAmount" placeholder="Enter Investment Amount">
+        </div>
+        <div class="form-group">
+            <button onclick="getStockData()">Fetch Current Price</button>
+        </div>
+        <div class="results">
+            <p id="stockName"></p>
+            <p id="stockPrice"></p>
+            <p id="stockChange"></p>
+        </div>
+        <div class="form-group">
+            <button onclick="calculateInvestment()">Calculate Profit/Loss</button>
+        </div>
+        <div class="results">
+            <p id="profitOrLoss"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
